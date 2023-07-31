@@ -1,13 +1,19 @@
 # vermont-trustmark
 This document is a public description of the State of Vermont's Identity Assurance Levels (IALs) and how the definition of level 1 differs from NIST definitions See [NIST Special Publication 800-63-3 Digital Identity Guidelines](https://pages.nist.gov/800-63-3/). This document's indented audience is the general public and and system engineers.
 
-The main difference
---------------------
+The Main Difference is this
+---------------------------
 
-he code differeantor is this:
+NIST-800-63-3 defineses Identity Assurance Level 1 (IAL-1) has having "no requirement to link the applicant to a specific real-life identity". Vermont, however, assignes no IAL when creating a my.vermont.gov account. Getting an "IAL-1", in Vermont means something in VT. IAL-1 in VT means that some real-world coreropbiration of a persons identity occured, but it did not meet the stringent requirements of NIST IAL-2.
 
-* NIST-800-63-3 deifes Identity Assurance Level 1 (IAL-1) has having "no requirement to link the applicant to a specific real-life identity". Vermont, however, assignes no IAL when creating a my.vermont.gov account. Getting an "IAL-1", in Vermont means that "some real-world coreropbiration of identity occured", but it did not meet the stringent requirements of NIST IAL-2.
 
+| LEVEL                  | NIST    |VERMONT|
+| -----------            | ------- |------
+| "" (Unset)             | -       | This is an untrusted account that has undergone NO identity verification.
+| 0 |                    | -       | Administrative reset. IAL may be set to `0` by Vermont.  This may happen to allow Identity verification retry or when the account is suspected to be compromised.|
+| 1 | No requirement     | Evidence supports the real-world existence of the claimed identitySome level of identity verification, but does not meet NIST's level 2 definition    |
+| 2 | High-level identity assurance    | Same as NIST |
+| 3 | Highest-level identity assurance(IAL2)| Same as NIST |
 
 2.2 Identity Assurance Levels
 
